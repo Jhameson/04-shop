@@ -5,6 +5,10 @@ import Head from 'next/head'
 import { getCssText } from 'src/styles'
 import { globalStyles } from 'src/styles/global'
 
+import logoImg from '../assets/logo.svg'
+import { Container, Header } from 'src/styles/app'
+import Image from 'next/image'
+
 const roboto = Roboto({ weight: ['400', '700'], subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -27,7 +31,14 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: getCssText() }}
         />
       </Head>
-      <body className={roboto.className}>{children}</body>
+      <body className={roboto.className}>
+        <Container>
+          <Header>
+            <Image src={logoImg.src} alt="logo" />
+          </Header>
+          {children}
+        </Container>
+      </body>
     </html>
   )
 }

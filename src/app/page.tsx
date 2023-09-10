@@ -1,3 +1,4 @@
+'use client'
 import { styled } from 'src/styles'
 
 const Button = styled('button', {
