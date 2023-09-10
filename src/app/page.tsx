@@ -1,15 +1,28 @@
 'use client'
-import { styled } from 'src/styles'
+import Image from 'next/image'
+import { HomeContainer, Product } from './style'
 
-const Button = styled('button', {
-  backgroundColor: '$green500',
-})
+import img1 from '../assets/1.png'
+import img2 from '../assets/2.png'
+import img3 from '../assets/3.png'
 
 export default function Home() {
   return (
-    <div>
-      <h1>Hello, world</h1>
-      <Button>Oi</Button>
-    </div>
+    <HomeContainer>
+      <Product>
+        <Image src={img1} width={520} height={480} alt="" />
+        <footer>
+          <strong>Camiseta X</strong>
+          <span>R$ 79,90</span>
+        </footer>
+      </Product>
+      <Product>
+        <Image src={img2} width={520} height={480} alt="" />
+        <footer>
+          <strong>Camiseta X</strong>
+          <span>R$ 79,90</span>
+        </footer>
+      </Product>
+    </HomeContainer>
   )
 }

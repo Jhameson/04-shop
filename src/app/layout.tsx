@@ -34,7 +34,7 @@ export default function RootLayout({
       <body className={roboto.className}>
         <Container>
           <Header>
-            <Image src={logoImg.src} alt="logo" />
+            <Image src={logoImg.src} alt="logo" width={130} height={52} />
           </Header>
           {children}
         </Container>
