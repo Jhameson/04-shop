@@ -1,4 +1,4 @@
-import { styled } from 'src/styles'
+import { styled } from 'src/app/styles'
 
 export const HomeContainer = styled('main', {
   display: 'flex',

@@ -2,11 +2,11 @@
 import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google'
 import Head from 'next/head'
-import { getCssText } from 'src/styles'
-import { globalStyles } from 'src/styles/global'
+import { getCssText } from 'src/app/styles'
+import { globalStyles } from 'src/app/styles/global'
 
 import logoImg from '../assets/logo.svg'
-import { Container, Header } from 'src/styles/app'
+import { Container, Header } from 'src/app/styles/app'
 import Image from 'next/image'
 
 const roboto = Roboto({ weight: ['400', '700'], subsets: ['latin'] })
